@@ -1,0 +1,56 @@
+.tableau-de-bord-content {
+  //TODO Exercice 1.a
+
+  //width: 80%;
+  //margin: auto;
+
+  // Informations Déclarations
+  .declarations-infos {
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+
+    .declarations-header {
+      //TODO Exercice 1.b
+      //display: flex;
+      //flex-direction: row;
+      //justify-content: space-between;
+    }
+
+    .declarations-body {
+      //TODO Exercice 1.b
+      //display: flex;
+      //justify-content: space-between;
+
+      p {
+        margin: 0;
+      }
+      span {
+        font-size: 13px;
+        color: blue;
+      }
+    }
+  }
+
+  // Charts
+  .declarations-chart-wrapper {
+    //TODO Exercice 1.b (indice : gap)
+
+    // gap: 20px;
+    //margin: 20px auto;
+    //display: flex;
+
+    .chart {
+      width: 100%;
+      height: 10em;
+      border: 1px solid lightgray;
+      border-radius: 2px;
+      text-align: center;
+    }
+  }
+
+  // Tableau
+  .declarations-tableau {
+  }
+}

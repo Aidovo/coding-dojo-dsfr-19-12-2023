@@ -1,0 +1,19 @@
+<div>
+  <div class="fr-tile  navbar" id="tile-6661" id="tile-6664">
+    <div class="fr-tile__body">
+      <div class="fr-tile__content">
+        <h3>
+          <span class={{iconTitle}} aria-hidden="true"></span>
+          {{name}}
+        </h3>
+        <div *ngIf="type === NavBarAction.SELECT && form" [formGroup]="form">
+          <dsfr-form-select (change)="selectMois(optionsValue?.value, $event)" [name]="'Avril'" [options]='monthSelect'
+            [value]="optionsValue?.value" formControlName="options">
+          </dsfr-form-select>
+        </div>
+        <dsfr-button [variant]="'secondary'" *ngIf="type === NavBarAction.BUTTON" [label]="'selectDefault'">
+        </dsfr-button>
+      </div>
+    </div>
+  </div>
+</div>

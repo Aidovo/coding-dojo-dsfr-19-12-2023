@@ -1,0 +1,61 @@
+<div class="tableau-de-bord">
+<!--  TODO bonus  -->
+  <dojo-navbar class="navbar" [name]="'Tableau de bord'" [iconTitle]="'fr-icon-pie-chart-2-line'"
+  (mounthChoice)="changementDeMois($event)"
+    [type]="'select'"></dojo-navbar>
+
+  <div class="tableau-de-bord-content">
+    <div class="declarations-infos">
+      <div class="declarations-header">
+        <h5>Déclarations</h5>
+<!--        TODO Exercice 3-->
+        <dsfr-button [variant]="'secondary'" [label]="'Nouvelle declaration'"  (click)="nouvelleDeclaration()"></dsfr-button>
+      </div>
+      <div class="declarations-body">
+        <div>
+          <p>Suivi des déclarations</p>
+          <span>
+            <strong>{{chartData?.penging}}</strong>
+            En attente
+          </span>
+          <span>
+            <strong>{{chartData?.dsnApproved}}</strong>
+            Passées en DSN
+          </span>
+        </div>
+        <div>
+          <p>Contestations</p>
+          <span>
+            <strong>{{chartData?.contestedByMe}}</strong>
+            Contestées à mon initiative
+          </span>
+          <span>
+            <strong>{{chartData?.contestedByOPCO}}</strong>
+            Contestées par une autre OPCO
+          </span>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="declarations-chart-wrapper">
+
+      <div class="chart">
+        chart
+      </div>
+
+      <div class="chart">
+        chart
+      </div>
+
+    </div>
+
+<!--    TODO Exercice 2-->
+    <div class="declarations-tableau-">
+    </div>
+  </div>
+</div>
+
+
+
+<!--TODO Exercice 3 : creation de la modale-->

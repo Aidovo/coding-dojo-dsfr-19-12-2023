@@ -1,0 +1,24 @@
+<div class="form-container" *ngIf="loginForm">
+  <form [formGroup]="loginForm" (ngSubmit)="login()">
+    <dsfr-form-input
+      label="Nom de l'utilisateur"
+      name="name"
+      formControlName="name"
+    ></dsfr-form-input>
+
+    <dsfr-form-input
+      label="Mot de passe"
+      type="password"
+      name="password"
+      formControlName="password"
+    ></dsfr-form-input>
+
+    <dsfr-form-checkbox
+      label="Se souvenir de moi"
+      name="rememberMe"
+      formControlName="rememberMe"
+    ></dsfr-form-checkbox>
+
+    <dsfr-button label="Connexion"></dsfr-button>
+  </form>
+</div>
